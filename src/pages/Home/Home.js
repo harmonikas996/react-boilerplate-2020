@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import logo from "../../logo.svg";
-import "./Home.css";
-import { Counter } from "../../components/Counter/Counter";
+import logo from '../../logo.svg';
+import './Home.css';
+import { Counter } from '../../components/Counter/Counter';
 
 const Home = () => (
   <div className="Home">

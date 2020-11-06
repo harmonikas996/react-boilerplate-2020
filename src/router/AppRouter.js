@@ -1,11 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import { routes } from "./routes";
-import NotFound from "../pages/NotFound/NotFound";
-import Home from "../pages/Home/Home";
-import About from "../pages/About/About";
-import Navigation from "../components/Navigation/Navigation";
+import { routes } from './routes';
+import NotFound from '../pages/NotFound/NotFound';
+import Home from '../pages/Home/Home';
+import About from '../pages/About/About';
+import Navigation from '../components/Navigation/Navigation';
 
 const AppRouter = () => (
   <Router>

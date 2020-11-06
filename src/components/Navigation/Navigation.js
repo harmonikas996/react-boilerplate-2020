@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./Navigation.css";
-import { routes } from "../../router/routes";
+import './Navigation.css';
+import { routes } from '../../router/routes';
 
 const Navigation = () => (
   <nav className="Top-navigation">
