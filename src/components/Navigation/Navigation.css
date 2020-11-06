@@ -1,0 +1,15 @@
+.Top-navigation ul {
+  list-style-type: none;
+}
+
+.Top-navigation a {
+  text-decoration: none;
+}
+
+.Top-navigation li {
+  display: inline;
+}
+
+.Top-navigation li:not(:last-child) {
+  margin-right: 20px;
+}
