@@ -1,3 +1,15 @@
+# React Boilerplate 2020
+
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/github/last-commit/harmonikas996/react-boilerplate-2020)]()
+
+- [x] State Management: **Redux + Redux Toolkit** (more details below)
+- [x] Routing: **React Router**
+- [x] Code Formatting: **Prettier**
+- [ ] Module Resolution: **babel-plugin-module-resolver**
+- [ ] Internationalization: **react-i18next**
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
