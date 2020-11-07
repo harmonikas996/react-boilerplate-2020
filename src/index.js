@@ -7,13 +7,6 @@ import store from './store/store';
 import * as serviceWorker from './serviceWorker';
 import AppRouter from './router/AppRouter';
 
-const obj = {
-  asada: 'adasdada',
-  asdsa: 'asdsadada',
-  asdqweq: 1,
-  asdada: '1231231',
-};
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
