@@ -7,6 +7,7 @@
 - [x] State Management: **Redux + Redux Toolkit** (more details below)
 - [x] Routing: **React Router**
 - [x] Code Formatting: **Prettier**
+- [x] Redux Action Logger: **redux-logger**
 - [ ] Module Resolution: **babel-plugin-module-resolver**
 - [ ] Internationalization: **react-i18next**
 
