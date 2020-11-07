@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
 import {
   decrement,
   increment,
   incrementByAmount,
-  incrementAsync,
+  incrementByAmountAsync,
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
 
-export function Counter() {
-  const count = useSelector(selectCount);
-  const dispatch = useDispatch();
+const Counter = ({
+  count,
+  increment,
+  decrement,
+  incrementByAmount,
+  incrementByAmountAsync,
+}) => {
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   return (
@@ -20,7 +26,7 @@ export function Counter() {
         <button
           className={styles.button}
           aria-label="Increment value"
-          onClick={() => dispatch(increment())}
+          onClick={() => increment()}
         >
           +
         </button>
@@ -28,7 +34,7 @@ export function Counter() {
         <button
           className={styles.button}
           aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
+          onClick={() => decrement()}
         >
           -
         </button>
@@ -42,19 +48,27 @@ export function Counter() {
         />
         <button
           className={styles.button}
-          onClick={() =>
-            dispatch(incrementByAmount(Number(incrementAmount) || 0))
-          }
+          onClick={() => incrementByAmount(Number(incrementAmount) || 0)}
         >
           Add Amount
         </button>
         <button
           className={styles.asyncButton}
-          onClick={() => dispatch(incrementAsync(Number(incrementAmount) || 0))}
+          onClick={() => incrementByAmountAsync(Number(incrementAmount) || 0)}
         >
           Add Async
         </button>
       </div>
     </div>
   );
-}
+};
+
+const mapStateToProps = (state) => ({ count: selectCount(state) });
+
+const mapDispatchToProps = (dispatch) =>
+  bindActionCreators(
+    { increment, decrement, incrementByAmount, incrementByAmountAsync },
+    dispatch
+  );
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);

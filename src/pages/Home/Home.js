@@ -2,7 +2,7 @@ import React from 'react';
 
 import logo from '../../logo.svg';
 import './Home.css';
-import { Counter } from '../../components/Counter/Counter';
+import Counter from '../../components/Counter/Counter';
 
 const Home = () => (
   <div className="Home">

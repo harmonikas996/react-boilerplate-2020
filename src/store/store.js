@@ -1,16 +1,24 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../components/Counter/counterSlice';
 import { createLogger } from 'redux-logger';
+import createSagaMiddleware from 'redux-saga';
 
-const middlewares = [];
+import rootSaga from './sagas';
+import counterReducer from '../components/Counter/counterSlice';
+
+const sagaMiddleware = createSagaMiddleware();
+const middlewares = [sagaMiddleware];
 
 if (process.env.NODE_ENV !== 'production') {
-  middlewares.push(createLogger());
+  middlewares.push(createLogger()); // logs state transitions in your browser
 }
 
-export default configureStore({
+const store = configureStore({
   reducer: {
     counter: counterReducer,
   },
   middleware: middlewares,
 });
+
+sagaMiddleware.run(rootSaga); // always after 'store' definition!
+
+export default store;
