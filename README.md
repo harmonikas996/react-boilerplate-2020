@@ -4,10 +4,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](https://opensource.org/licenses/MIT)
 [![License: MIT](https://img.shields.io/github/last-commit/harmonikas996/react-boilerplate-2020)]()
 
-- [x] State Management: **Redux + Redux Toolkit** (more details below)
+- [x] State Management: **Redux, Redux Toolkit, Redux Saga** (more details below)
+- [x] Redux Action Logger: **redux-logger**
 - [x] Routing: **React Router**
 - [x] Code Formatting: **Prettier**
-- [x] Redux Action Logger: **redux-logger**
 - [ ] Module Resolution: **babel-plugin-module-resolver**
 - [ ] Internationalization: **react-i18next**
 
