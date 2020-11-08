@@ -2,5 +2,9 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true
+  "editor.formatOnType": true,
+  "css.lint.validProperties": ["composes"],
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.validProperties": ["composes"],
+  "scss.lint.unknownAtRules": "ignore"
 }
